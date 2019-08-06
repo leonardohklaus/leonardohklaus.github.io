@@ -1,0 +1,162 @@
+body {
+  overflow: hidden;
+  animation: color 1.5s ease infinite;
+}
+
+.ball {
+
+  position: absolute;
+  
+  right: 10px;
+	left: 10px; 
+	top: 10px;
+  bottom: 10px;
+	background-color: black;
+	
+	
+	
+	animation: size 2s alternate-reverse 2;
+}
+
+@keyframes size {
+	0% {transform: scale(0);}
+	50% {transform: scale(50%);}
+	100% {transform: scale(100%);}
+}
+
+@keyframes color {
+	0% {background-color: white;}
+	50% {background-color: black;}
+	100% {background-color: white}
+}
+
+.box-position {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -200px;
+  width: 400px;
+  height: 400px;
+  /*background-color: red;*/
+}
+
+.container {
+	width: 345px;
+	height: 25px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  margin-left: -170px;
+}
+
+.pre {
+	padding: 5px;
+	font-family: "Montserrat", serif;
+	text-transform: uppercase;
+	text-align: right;
+	font-size: 1.3em;
+  background-color: white;
+  display: block;
+  width: 70%;
+  position: relative;
+  color: black;
+  
+}
+
+.wrapper {
+	position: absolute;
+  float: right;
+  width: 85px;
+  height: 38px;
+	top: 0;
+	left: 252px;
+	overflow: hidden;
+  background-color: black;
+  border-right: 2px solid white;
+}
+
+
+
+.rotator {
+  width: 80px;
+	height: 400px;
+	position: absolute;
+	top: -44px;
+	left: 0;
+	/*animation: scroll 3s ease
+	infinite;*/
+  
+  animation: slide 2s alternate 1;
+	background-color: black;
+	color: white;
+  
+}
+
+@keyframes slide {
+  0% {transform: translate(-100px);}
+  100% {transform: translate(0);}
+}
+
+@keyframes scroll {
+	0% {transform: translateY(0);}
+	50% {transform: translateY(-50%);}
+	100% {transform: translateY(-92%);}
+}
+
+.element {
+	font-family: "Montserrat", serif;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	/*background-color: red;*/
+	margin-top: 50px;
+  padding-left: 0;
+}
+
+
+
+
+	  /*------------- footer -------------*/
+footer {
+	padding: 0;
+	margin-left: -120px;
+	width: 250px;
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	color: white;	
+	text-align: center;
+  cursor: default;
+	/*background-color: yellow;*/
+}
+
+.first {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: fcolor 1s ease 1;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  /*background-color: red;*/
+}
+
+@keyframes fcolor {
+  from {text-color: black;}
+  to {text-color: white;}
+}
+
+#copyr {
+   color: white;
+   position: absolute;
+   top: -2px;
+   left: 87%;
+}
+#heart:hover {
+	color: red;
+	cursor: none;
+}
